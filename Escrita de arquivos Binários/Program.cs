@@ -13,6 +13,7 @@ namespace Escrita_de_arquivos_Binários
     {
         static void Main(string[] args)
         {
+            //Criando Arquivo
             FileStream stream = new FileStream("C:\\estudos c#\\meuarquivo.Diogo",FileMode.OpenOrCreate);
             BinaryFormatter encoder = new BinaryFormatter();
 

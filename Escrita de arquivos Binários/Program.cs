@@ -14,11 +14,14 @@ namespace Escrita_de_arquivos_Binários
         static void Main(string[] args)
         {
             //Criando Arquivo
+            int a = 120;
+            string nome = "Diogo Felipe";
+
             FileStream stream = new FileStream("C:\\estudos c#\\meuarquivo.Diogo",FileMode.OpenOrCreate);
             BinaryFormatter encoder = new BinaryFormatter();
 
-            encoder.Serialize(stream, 120);
-            encoder.Serialize(stream, "Diogo Felipe");
+            encoder.Serialize(stream, a);
+            encoder.Serialize(stream, nome);
             stream.Close();
         }
     }
